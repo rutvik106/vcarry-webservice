@@ -28,6 +28,17 @@ switch ($_GET["method"])
 
 		break;
 
+
+	//for changing trip status from START/STOP
+	case: 'edit_trip_status'
+
+		//If following method is taking any arguments as parameters please mention it
+		//you can fetch arguments using $_GET['whatever_parameter_name']
+		//must send response for status to confirm is trip has started or not
+		echo json_encode(whateverFunction($_GET["trip_status"]));
+
+		break;
+
 	default:
 
 		echo("Welcome to V-Carry webservice");
